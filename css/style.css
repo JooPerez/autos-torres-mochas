@@ -7,6 +7,7 @@
     --light-color:#666;
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     --border:.1rem solid rgba(0,0,0,.1);
+    --orange:#ff8000;
 }
 
 *{
@@ -15,7 +16,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: .2s linear;
 }
 
@@ -88,7 +89,7 @@ section{
 }
 
 .header .logo span{
-    color:var(--yellow);
+    color:var(--orange);
 }
 
 .header .navbar a{
@@ -270,6 +271,8 @@ section{
 .icons-container .icons:hover .content p{
     color:#eee;
 }
+/*seccion trabajo*/
+
 
 .vehicles .vehicles-slider{
     padding-bottom: 5rem;
@@ -330,6 +333,38 @@ section{
     color:var(--yellow);
     padding:0 .5rem;
 }
+
+/*seccion contenedor popup*/
+.vehicles .vehicles-slider .box .content .modal-comteiner1{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+.show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+.vehicles .vehicles-slider .box .content .modal-comteiner1 .modal{
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+/*termina seccion contenedor*/
 
 .swiper-pagination-bullet-active{
     background: var(--yellow);
